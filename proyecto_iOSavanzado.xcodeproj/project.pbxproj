@@ -9,21 +9,76 @@
 /* Begin PBXBuildFile section */
 		0D4AC92829A92A3700747B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC92729A92A3700747B38 /* AppDelegate.swift */; };
 		0D4AC92A29A92A3700747B38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC92929A92A3700747B38 /* SceneDelegate.swift */; };
-		0D4AC92C29A92A3700747B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC92B29A92A3700747B38 /* ViewController.swift */; };
 		0D4AC92F29A92A3700747B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4AC92D29A92A3700747B38 /* Main.storyboard */; };
 		0D4AC93129A92A3800747B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D4AC93029A92A3800747B38 /* Assets.xcassets */; };
 		0D4AC93429A92A3800747B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D4AC93229A92A3800747B38 /* LaunchScreen.storyboard */; };
+		0D4AC93D29A9D8F700747B38 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0D4AC93C29A9D8F700747B38 /* Kingfisher */; };
+		0D4AC94029A9DAC600747B38 /* HeroesListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC93F29A9DAC600747B38 /* HeroesListTableView.swift */; };
+		0D4AC94229A9DC9C00747B38 /* HeroesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC94129A9DC9C00747B38 /* HeroesListTableViewController.swift */; };
+		0D4AC94429A9DE9900747B38 /* HeroesListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC94329A9DE9900747B38 /* HeroesListTableViewDataSource.swift */; };
+		0D4AC94729A9DF3100747B38 /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC94629A9DF3100747B38 /* HeroModel.swift */; };
+		0D4AC94B29A9E06000747B38 /* HeroeListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC94A29A9E06000747B38 /* HeroeListViewCell.swift */; };
+		0D4AC94D29A9E26400747B38 /* HeroListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC94C29A9E26400747B38 /* HeroListTableViewDelegate.swift */; };
+		0D4AC95029A9E2F300747B38 /* HeroesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC94F29A9E2F300747B38 /* HeroesListViewModel.swift */; };
+		0D4AC95329A9E36900747B38 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC95229A9E36900747B38 /* Constants.swift */; };
+		0D4AC95729A9E3C300747B38 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC95629A9E3C300747B38 /* ApiClient.swift */; };
+		0D4AC95A29A9E55B00747B38 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC95929A9E55B00747B38 /* LoginView.swift */; };
+		0D4AC95C29A9E56600747B38 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC95B29A9E56600747B38 /* LoginViewController.swift */; };
+		0D4AC95E29A9E66500747B38 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC95D29A9E66500747B38 /* LoginViewModel.swift */; };
+		0D4AC96029AA058600747B38 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC95F29AA058600747B38 /* HomeTabBarController.swift */; };
+		0D4AC96429AA0F3B00747B38 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC96329AA0F3B00747B38 /* MapView.swift */; };
+		0D4AC96629AA0F7500747B38 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC96529AA0F7500747B38 /* MapViewController.swift */; };
+		0D4AC96B29AA109700747B38 /* HeroMapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC96A29AA109700747B38 /* HeroMapModel.swift */; };
+		0D4AC96E29AA117800747B38 /* HeroMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC96D29AA117800747B38 /* HeroMapViewModel.swift */; };
+		0D4AC97329AA23BB00747B38 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC97229AA23BB00747B38 /* Annotation.swift */; };
+		0D4AC97529AA241300747B38 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC97429AA241300747B38 /* AnnotationView.swift */; };
+		0D4AC97729AA244D00747B38 /* CalloutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC97629AA244D00747B38 /* CalloutView.swift */; };
+		0D4AC97929AA25DE00747B38 /* CustomMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC97829AA25DE00747B38 /* CustomMarker.swift */; };
+		0D4AC97C29AB2CD300747B38 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC97B29AB2CD300747B38 /* Keychain.swift */; };
+		0D4AC97F29AB47FF00747B38 /* Hero.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC97D29AB47FF00747B38 /* Hero.xcdatamodeld */; };
+		0D4AC98129AB4A0400747B38 /* HeroCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC98029AB4A0400747B38 /* HeroCoreData.swift */; };
+		0D4AC98329AB4C3000747B38 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC98229AB4C3000747B38 /* CoreDataManager.swift */; };
+		0D4AC98529AB4F8400747B38 /* CDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC98429AB4F8400747B38 /* CDUtils.swift */; };
+		0D4AC98829ABC2F600747B38 /* HeroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC98729ABC2F600747B38 /* HeroDetailViewController.swift */; };
+		0D4AC98A29ABC30D00747B38 /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4AC98929ABC30D00747B38 /* HeroDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D4AC92429A92A3700747B38 /* proyecto_iOSavanzado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyecto_iOSavanzado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D4AC92729A92A3700747B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D4AC92929A92A3700747B38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0D4AC92B29A92A3700747B38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D4AC92E29A92A3700747B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D4AC93029A92A3800747B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D4AC93329A92A3800747B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D4AC93529A92A3800747B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D4AC93F29A9DAC600747B38 /* HeroesListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListTableView.swift; sourceTree = "<group>"; };
+		0D4AC94129A9DC9C00747B38 /* HeroesListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListTableViewController.swift; sourceTree = "<group>"; };
+		0D4AC94329A9DE9900747B38 /* HeroesListTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListTableViewDataSource.swift; sourceTree = "<group>"; };
+		0D4AC94629A9DF3100747B38 /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		0D4AC94A29A9E06000747B38 /* HeroeListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeListViewCell.swift; sourceTree = "<group>"; };
+		0D4AC94C29A9E26400747B38 /* HeroListTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListTableViewDelegate.swift; sourceTree = "<group>"; };
+		0D4AC94F29A9E2F300747B38 /* HeroesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewModel.swift; sourceTree = "<group>"; };
+		0D4AC95229A9E36900747B38 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0D4AC95629A9E3C300747B38 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		0D4AC95929A9E55B00747B38 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0D4AC95B29A9E56600747B38 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0D4AC95D29A9E66500747B38 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0D4AC95F29AA058600747B38 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		0D4AC96329AA0F3B00747B38 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		0D4AC96529AA0F7500747B38 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0D4AC96A29AA109700747B38 /* HeroMapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMapModel.swift; sourceTree = "<group>"; };
+		0D4AC96D29AA117800747B38 /* HeroMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMapViewModel.swift; sourceTree = "<group>"; };
+		0D4AC97229AA23BB00747B38 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		0D4AC97429AA241300747B38 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		0D4AC97629AA244D00747B38 /* CalloutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutView.swift; sourceTree = "<group>"; };
+		0D4AC97829AA25DE00747B38 /* CustomMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarker.swift; sourceTree = "<group>"; };
+		0D4AC97B29AB2CD300747B38 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		0D4AC97E29AB47FF00747B38 /* Hero.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hero.xcdatamodel; sourceTree = "<group>"; };
+		0D4AC98029AB4A0400747B38 /* HeroCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCoreData.swift; sourceTree = "<group>"; };
+		0D4AC98229AB4C3000747B38 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0D4AC98429AB4F8400747B38 /* CDUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUtils.swift; sourceTree = "<group>"; };
+		0D4AC98729ABC2F600747B38 /* HeroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewController.swift; sourceTree = "<group>"; };
+		0D4AC98929ABC30D00747B38 /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D4AC93D29A9D8F700747B38 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +112,170 @@
 		0D4AC92629A92A3700747B38 /* proyecto_iOSavanzado */ = {
 			isa = PBXGroup;
 			children = (
+				0D4AC98629ABC2D300747B38 /* HeroDetail */,
+				0D4AC97A29AB2CAE00747B38 /* Data */,
+				0D4AC97129AA23A700747B38 /* Annotations */,
+				0D4AC96229AA0F2600747B38 /* Map */,
+				0D4AC96129AA068400747B38 /* HomeTabBarController */,
+				0D4AC95129A9E35C00747B38 /* Utils */,
+				0D4AC95829A9E54C00747B38 /* Login */,
+				0D4AC94829A9DF3800747B38 /* Heroes */,
 				0D4AC92729A92A3700747B38 /* AppDelegate.swift */,
 				0D4AC92929A92A3700747B38 /* SceneDelegate.swift */,
-				0D4AC92B29A92A3700747B38 /* ViewController.swift */,
 				0D4AC92D29A92A3700747B38 /* Main.storyboard */,
 				0D4AC93029A92A3800747B38 /* Assets.xcassets */,
 				0D4AC93229A92A3800747B38 /* LaunchScreen.storyboard */,
 				0D4AC93529A92A3800747B38 /* Info.plist */,
+				0D4AC97829AA25DE00747B38 /* CustomMarker.swift */,
 			);
 			path = proyecto_iOSavanzado;
+			sourceTree = "<group>";
+		};
+		0D4AC93E29A9DA8600747B38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC93F29A9DAC600747B38 /* HeroesListTableView.swift */,
+				0D4AC94A29A9E06000747B38 /* HeroeListViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D4AC94529A9DF1D00747B38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC94629A9DF3100747B38 /* HeroModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D4AC94829A9DF3800747B38 /* Heroes */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC94E29A9E2CF00747B38 /* ViewModel */,
+				0D4AC94929A9E03800747B38 /* Controller */,
+				0D4AC94529A9DF1D00747B38 /* Model */,
+				0D4AC93E29A9DA8600747B38 /* View */,
+			);
+			path = Heroes;
+			sourceTree = "<group>";
+		};
+		0D4AC94929A9E03800747B38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC94129A9DC9C00747B38 /* HeroesListTableViewController.swift */,
+				0D4AC94329A9DE9900747B38 /* HeroesListTableViewDataSource.swift */,
+				0D4AC94C29A9E26400747B38 /* HeroListTableViewDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D4AC94E29A9E2CF00747B38 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC94F29A9E2F300747B38 /* HeroesListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D4AC95129A9E35C00747B38 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC95229A9E36900747B38 /* Constants.swift */,
+				0D4AC95629A9E3C300747B38 /* ApiClient.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0D4AC95829A9E54C00747B38 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC95929A9E55B00747B38 /* LoginView.swift */,
+				0D4AC95B29A9E56600747B38 /* LoginViewController.swift */,
+				0D4AC95D29A9E66500747B38 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0D4AC96129AA068400747B38 /* HomeTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC95F29AA058600747B38 /* HomeTabBarController.swift */,
+			);
+			path = HomeTabBarController;
+			sourceTree = "<group>";
+		};
+		0D4AC96229AA0F2600747B38 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC96C29AA116100747B38 /* ViewModel */,
+				0D4AC96929AA107F00747B38 /* Model */,
+				0D4AC96829AA107300747B38 /* Controller */,
+				0D4AC96729AA105700747B38 /* View */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		0D4AC96729AA105700747B38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC96329AA0F3B00747B38 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0D4AC96829AA107300747B38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC96529AA0F7500747B38 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D4AC96929AA107F00747B38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC96A29AA109700747B38 /* HeroMapModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D4AC96C29AA116100747B38 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC96D29AA117800747B38 /* HeroMapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D4AC97129AA23A700747B38 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC97229AA23BB00747B38 /* Annotation.swift */,
+				0D4AC97429AA241300747B38 /* AnnotationView.swift */,
+				0D4AC97629AA244D00747B38 /* CalloutView.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		0D4AC97A29AB2CAE00747B38 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC97B29AB2CD300747B38 /* Keychain.swift */,
+				0D4AC97D29AB47FF00747B38 /* Hero.xcdatamodeld */,
+				0D4AC98029AB4A0400747B38 /* HeroCoreData.swift */,
+				0D4AC98229AB4C3000747B38 /* CoreDataManager.swift */,
+				0D4AC98429AB4F8400747B38 /* CDUtils.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0D4AC98629ABC2D300747B38 /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D4AC98729ABC2F600747B38 /* HeroDetailViewController.swift */,
+				0D4AC98929ABC30D00747B38 /* HeroDetailView.swift */,
+			);
+			path = HeroDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +294,9 @@
 			dependencies = (
 			);
 			name = proyecto_iOSavanzado;
+			packageProductDependencies = (
+				0D4AC93C29A9D8F700747B38 /* Kingfisher */,
+			);
 			productName = proyecto_iOSavanzado;
 			productReference = 0D4AC92429A92A3700747B38 /* proyecto_iOSavanzado.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +325,9 @@
 				Base,
 			);
 			mainGroup = 0D4AC91B29A92A3700747B38;
+			packageReferences = (
+				0D4AC93B29A9D8F700747B38 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0D4AC92529A92A3700747B38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +355,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D4AC92C29A92A3700747B38 /* ViewController.swift in Sources */,
+				0D4AC98529AB4F8400747B38 /* CDUtils.swift in Sources */,
+				0D4AC95329A9E36900747B38 /* Constants.swift in Sources */,
+				0D4AC94029A9DAC600747B38 /* HeroesListTableView.swift in Sources */,
+				0D4AC97729AA244D00747B38 /* CalloutView.swift in Sources */,
+				0D4AC96E29AA117800747B38 /* HeroMapViewModel.swift in Sources */,
+				0D4AC95C29A9E56600747B38 /* LoginViewController.swift in Sources */,
+				0D4AC95E29A9E66500747B38 /* LoginViewModel.swift in Sources */,
+				0D4AC94229A9DC9C00747B38 /* HeroesListTableViewController.swift in Sources */,
 				0D4AC92829A92A3700747B38 /* AppDelegate.swift in Sources */,
+				0D4AC96629AA0F7500747B38 /* MapViewController.swift in Sources */,
+				0D4AC97929AA25DE00747B38 /* CustomMarker.swift in Sources */,
+				0D4AC97F29AB47FF00747B38 /* Hero.xcdatamodeld in Sources */,
+				0D4AC96429AA0F3B00747B38 /* MapView.swift in Sources */,
+				0D4AC94B29A9E06000747B38 /* HeroeListViewCell.swift in Sources */,
+				0D4AC97C29AB2CD300747B38 /* Keychain.swift in Sources */,
+				0D4AC96029AA058600747B38 /* HomeTabBarController.swift in Sources */,
+				0D4AC97529AA241300747B38 /* AnnotationView.swift in Sources */,
+				0D4AC98329AB4C3000747B38 /* CoreDataManager.swift in Sources */,
+				0D4AC94729A9DF3100747B38 /* HeroModel.swift in Sources */,
+				0D4AC94D29A9E26400747B38 /* HeroListTableViewDelegate.swift in Sources */,
+				0D4AC97329AA23BB00747B38 /* Annotation.swift in Sources */,
+				0D4AC95A29A9E55B00747B38 /* LoginView.swift in Sources */,
+				0D4AC95729A9E3C300747B38 /* ApiClient.swift in Sources */,
+				0D4AC98829ABC2F600747B38 /* HeroDetailViewController.swift in Sources */,
+				0D4AC98129AB4A0400747B38 /* HeroCoreData.swift in Sources */,
+				0D4AC94429A9DE9900747B38 /* HeroesListTableViewDataSource.swift in Sources */,
+				0D4AC95029A9E2F300747B38 /* HeroesListViewModel.swift in Sources */,
+				0D4AC96B29AA109700747B38 /* HeroMapModel.swift in Sources */,
 				0D4AC92A29A92A3700747B38 /* SceneDelegate.swift in Sources */,
+				0D4AC98A29ABC30D00747B38 /* HeroDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +602,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0D4AC93B29A9D8F700747B38 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D4AC93C29A9D8F700747B38 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0D4AC93B29A9D8F700747B38 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		0D4AC97D29AB47FF00747B38 /* Hero.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0D4AC97E29AB47FF00747B38 /* Hero.xcdatamodel */,
+			);
+			currentVersion = 0D4AC97E29AB47FF00747B38 /* Hero.xcdatamodel */;
+			path = Hero.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0D4AC91C29A92A3700747B38 /* Project object */;
 }
