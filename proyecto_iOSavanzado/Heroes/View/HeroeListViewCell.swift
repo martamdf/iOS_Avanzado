@@ -46,7 +46,7 @@ class HeroeListViewCell: UITableViewCell {
     
     func setupViews() {
         
-        backgroundColor = .systemBackground
+        backgroundColor = UIColor.red.withAlphaComponent(0.1)
         
         addSubview(heroeImageVIew)
         addSubview(heroeName)

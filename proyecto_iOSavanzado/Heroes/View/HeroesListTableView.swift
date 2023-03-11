@@ -9,6 +9,13 @@ import UIKit
 
 class HeroesListTableView : UIView {
 
+    let imageView = {
+        let img = UIImageView()
+        img.image = UIImage(named: "pin.png")
+        img.translatesAutoresizingMaskIntoConstraints = false
+        return img
+    }()
+    
     let headerLabel = {
         let label = UILabel()
         label.text = "Heroes"
@@ -49,6 +56,7 @@ class HeroesListTableView : UIView {
         let tableView = UITableView()
         tableView.backgroundColor = .systemBackground
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.backgroundColor = UIColor.red.withAlphaComponent(0.1)
         tableView.register(HeroeListViewCell.self, forCellReuseIdentifier: "HeroeListViewCell")
         return tableView
     } ()
@@ -67,12 +75,18 @@ class HeroesListTableView : UIView {
         
         backgroundColor = .systemBackground
         
+        addSubview(imageView)
         addSubview(headerLabel)
         addSubview(logoutButton)
         addSubview(searchBar)
         addSubview(heroesTableView)
         
         NSLayoutConstraint.activate([
+            
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
+            imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0),
             
             headerLabel.topAnchor.constraint(equalTo: topAnchor, constant: 60),
             headerLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
@@ -92,7 +106,7 @@ class HeroesListTableView : UIView {
             heroesTableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             heroesTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             heroesTableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: 20),
-            heroesTableView.bottomAnchor.constraint(equalTo: bottomAnchor)
+            heroesTableView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 100)
         ])
     }
 }
